@@ -1,0 +1,20 @@
+site_name: lkw123's Wiki
+site_url: https://wiki.lkwplus.com
+site_author: lkw123
+repo_url: https://github.com/synthpop123/wiki
+repo_name: synthpop123/wiki
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil-box-multiple-outline
+    # view: material/eye
+  features:
+    - content.action.edit
+    - content.action.view
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+copyright: Copyright &copy; 2023 lkw123
+
