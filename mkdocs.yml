@@ -4,17 +4,81 @@ site_author: lkw123
 repo_url: https://github.com/synthpop123/wiki
 repo_name: synthpop123/wiki
 edit_uri: edit/main/docs/
+
 theme:
   name: material
+  favicon: images/favicon.ico
   icon:
-    repo: fontawesome/brands/github
+    logo: fontawesome/solid/bolt-lightning
+    repo: fontawesome/brands/git-alt
     edit: material/pencil-box-multiple-outline
     # view: material/eye
   features:
     - content.action.edit
     - content.action.view
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.prune
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    # - toc.integrate
 plugins:
   - git-revision-date-localized:
-      enable_creation_date: true
+      enable_creation_date: false
+      type: timeago
+  - search:
+      separator: '[\s\u200b\-]'
+  - glightbox
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
 copyright: Copyright &copy; 2023 lkw123
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/synthpop123
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/whoamamamiii
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/lkwtg
+    - icon: fontawesome/solid/envelope
+      link: mailto:me@lkwplus.com
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - md_in_html
+  - attr_list
+  - def_list
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
