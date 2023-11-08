@@ -1,26 +1,34 @@
+# Project information
 site_name: lkw123's Wiki
 site_url: https://wiki.lkwplus.com
 site_author: lkw123
+
+# Repository
 repo_url: https://github.com/synthpop123/wiki
 repo_name: synthpop123/wiki
 edit_uri: edit/main/docs/
 
+# Copyright
+copyright: Copyright &copy; 2023 lkw123
+
+# Theme configuration
 theme:
   name: material
-  palette: 
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+  # palette: 
+  #   # Palette toggle for light mode
+  #   - scheme: default
+  #     toggle:
+  #       icon: material/nintendo-switch
+  #       name: Switch to dark mode
+  #   # Palette toggle for dark mode
+  #   - scheme: slate
+  #     toggle:
+  #       icon: material/nintendo-switch
+  #       name: Switch to light mode
   favicon: images/favicon.ico
   icon:
-    logo: fontawesome/solid/bolt-lightning
+    # logo: fontawesome/solid/bolt-lightning
+    logo: material/notification-clear-all
     repo: fontawesome/brands/git-alt
     # edit: material/pencil-box-multiple-outline
     # view: material/eye
@@ -47,8 +55,6 @@ plugins:
       minify_js: true
       minify_css: true
 
-copyright: Copyright &copy; 2023 lkw123
-
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -60,6 +66,7 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:me@lkwplus.com
 
+# Extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
