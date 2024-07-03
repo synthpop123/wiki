@@ -1,4 +1,4 @@
-mkdocs-material==9.5.22
+mkdocs-material==9.5.27
 mkdocs-glightbox
 mkdocs-minify-plugin
 mkdocs-git-revision-date-localized-plugin
