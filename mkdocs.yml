@@ -74,6 +74,22 @@ nav:
           - MySQL: interview/mysql.md
           - PostgreSQL: interview/postgresql.md
           - Redis: interview/redis.md
+      - 操作系统和网络:
+          - 操作系统: interview/os.md
+          - 计算机网络: interview/network.md
+      - 容器和虚拟化:
+          - Docker: interview/docker.md
+          - Kubernetes: interview/kubernetes.md
+          - VMware: interview/vmware.md
+      - 框架:
+          - Flask: interview/flask.md
+          - FastAPI: interview/fastapi.md
+          - Django: interview/django.md
+          - Vue.js: interview/vuejs.md
+          - React: interview/react.md
+      - 工具:
+          - Git/SVN: interview/git.md
+          - Nginx: interview/nginx.md
 
 extra:
   social:
