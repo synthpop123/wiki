@@ -1,13 +1,18 @@
+---
+hide:
+  - navigation
+---
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- `mkdocs new [dir-name]` - Create a new project.
+- `mkdocs serve` - Start the live-reloading docs server.
+- `mkdocs build` - Build the documentation site.
+- `mkdocs -h` - Print help message and exit.
 
 ## Project layout
 
@@ -15,7 +20,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
-    
+
 ## Code Block
 
 ```python
@@ -34,9 +39,9 @@ print('Hello World!')
 
 ## Lists
 
-* list 1
-* list 2
-* list 3
+- list 1
+- list 2
+- list 3
 
 Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
 
@@ -51,39 +56,37 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2]
   <figcaption>Image caption</figcaption>
 </figure>
 
-
 Definition list
 
 `Lorem ipsum dolor sit amet`
 
-:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
-    tellus non sem sollicitudin, quis rutrum leo facilisis.
+: Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+tellus non sem sollicitudin, quis rutrum leo facilisis.
 
 `Cras arcu libero`
 
-:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
-    ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+: Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
 
     Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
     Nam vulputate tincidunt fringilla.
     Nullam dignissim ultrices urna non auctor.
 
-
-The homomorphism $f$ is injective if and only if its kernel is only the 
-singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq b$ such 
+The homomorphism $f$ is injective if and only if its kernel is only the
+singleton set $e_G$, because otherwise $\exists a,b\in G$ with $a\neq b$ such
 that $f(a)=f(b)$.
 
 $$
 \lim_{x \to +\infty} F(x)=G(x)
 $$
 
-| Method      | Description                          |
-| ----------- | ------------------------------------ |
-| `GET`       | :material-check:     Fetch resource  |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
+| Method   | Description                          |
+| -------- | ------------------------------------ |
+| `GET`    | :material-check: Fetch resource      |
+| `PUT`    | :material-check-all: Update resource |
+| `DELETE` | :material-close: Delete resource     |
 
-``` py title="bubble_sort.py" linenums="1"
+```py title="bubble_sort.py" linenums="1"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):

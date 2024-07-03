@@ -9,12 +9,12 @@ repo_name: synthpop123/wiki
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2023 lkw123
+copyright: Copyright &copy; 2023 - 2024 lkw123
 
 # Theme configuration
 theme:
   name: material
-  # palette: 
+  # palette:
   #   # Palette toggle for light mode
   #   - scheme: default
   #     toggle:
@@ -36,9 +36,11 @@ theme:
     - content.action.edit
     - content.action.view
     - navigation.instant
-    - navigation.instant.prefetch
     - navigation.tabs
+    - navigation.indexes
+    - navigation.sections
     - navigation.prune
+    - navigation.top
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -54,6 +56,24 @@ plugins:
       minify_html: true
       minify_js: true
       minify_css: true
+
+# Page tree
+nav:
+  - Welcome: index.md
+  - Interview:
+      # - interview/index.md
+      - 编程语言基础:
+          - C/C++: interview/cpp.md
+          - Python: interview/python.md
+      - 算法:
+          - 基础算法: interview/basic.md
+          - 数据结构: interview/data_structure.md
+          - LeetCode: interview/leetcode.md
+      - 数据库:
+          - 数据库基础: interview/database.md
+          - MySQL: interview/mysql.md
+          - PostgreSQL: interview/postgresql.md
+          - Redis: interview/redis.md
 
 extra:
   social:
@@ -93,9 +113,11 @@ markdown_extensions:
       alternate_style: true
 
 extra_javascript:
-  - javascripts/katex.js 
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js  
+  - javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
 
 extra_css:
+  - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
