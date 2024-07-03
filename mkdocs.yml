@@ -63,7 +63,8 @@ nav:
   - Interview:
       # - interview/index.md
       - 编程语言基础:
-          - C/C++: interview/cpp.md
+          - C/C++:
+            - Q&A: interview/cpp/q&a.md
           - Python: interview/python.md
       - 算法:
           - 基础算法: interview/basic.md
@@ -134,6 +135,6 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
 
 extra_css:
-  - stylesheets/extra.css
-  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  # - stylesheets/extra.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
